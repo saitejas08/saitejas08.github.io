@@ -9,9 +9,11 @@ body {
 
 .container {
   width: 70%;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.85);
+  margin: 4rem auto;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 0 #f5f0e6;
 }
+
