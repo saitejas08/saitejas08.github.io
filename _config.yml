@@ -25,3 +25,5 @@ defaults:
       type: "pages"
     values:
       layout: default
+#to commit changes do the following command in cmd
+# bundle exec jekyll serve --livereload

@@ -1,5 +1,5 @@
 /* ========================================================================== 
-   IMPORTS & RESET 
+   IMPORTS & RESET & GLOBAL LAYOUT
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -15,53 +15,19 @@ html {
 }
 body {
   min-height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #111; /* fallback */
-}
-
-/* ========================================================================== 
-   SITE-WIDE HEADER / NAV 
-   ========================================================================== */
-.site-header {
-  background: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.site-logo {
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: #111;
-}
-.site-menu {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-.site-menu a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #111;
-  transition: color .2s;
-}
-.site-menu a:hover {
-  color: #007acc;
+    font-family: Arial, sans-serif;
+    background-color: #fff;  /* ← default light background */
+    color: #111;             /* ← default dark text for readability */
 }
 
 /* ========================================================================== 
    HERO BACKGROUND & LAYOUT 
    ========================================================================== */
+
 body.hero {
   position: relative;
-  overflow: hidden; /* hides any overflow only on the hero */
+  overflow: hidden;        /* hides overflow only on the hero */
+  background-color: #111;  /* dark fallback behind the overlay */
 }
 .hero__overlay {
   position: absolute;
@@ -114,6 +80,57 @@ body.hero {
   font-size: 1.25rem;
   color: #555;
 }
+/* — ICONS UNDER SUBTITLE — */
+.hero__panel--left .hero__icons {
+  margin-top: 1rem;
+  display: flex;
+}
+.hero__panel--left .hero__icons a {
+  margin-right: 1rem;
+  display: inline-flex;
+}
+.hero__panel--left .hero__icons svg {
+  width: 24px;
+  height: 24px;
+  fill: #111;
+  transition: fill 0.2s;
+}
+.hero__panel--left .hero__icons a:hover svg {
+  fill: #007acc;
+}
+
+/*
+— CENTERED MENU ONLY — 
+.hero__nav {
+  position: absolute;
+  top: 50%;        exactly vertical middle 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 2rem;
+  border-radius: 999px;
+  z-index: 2;
+}
+.hero__menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;       remove previous right-margin
+}
+.hero__menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #111;
+  transition: color 0.2s;
+}
+.hero__menu a:hover {
+  color: #007acc;
+}
+*/
 
 /* ========================================================================== 
    TRANSLUCENT CENTER NAV (70% × 70% hero) 
@@ -164,6 +181,7 @@ body.hero {
 .hero__icons a:hover svg {
   fill: #007acc;
 }
+
 
 /* ========================================================================== 
    PAGE CONTENT 

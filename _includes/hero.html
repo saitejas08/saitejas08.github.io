@@ -5,6 +5,21 @@
     <aside class="hero__panel hero__panel--left">
       <h1 class="hero__title">SAI TEJA</h1>
       <p class="hero__subtitle">Full stack developer</p>
+      <div class="hero__icons">
+        <!-- Email icon -->
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 4h20v16H2V4zm2 2v1.511l8 5.011 8-5.011V6H4zm0 12h16V9.489l-8 5.011-8-5.011V18z"/>
+        </svg>
+        </a>
+
+        <!-- LinkedIn icon -->
+        <a href="{{ site.author.links[1].url }}" aria-label="LinkedIn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.1 8h4.8v14H.1V8zm7.54 0h4.6v2h.1c.6-1.1 2.06-2.2 4.24-2.2 4.54 0 5.38 3 5.38 6.9V22h-4.8v-6.1c0-1.45 0-3.3-2.01-3.3-2.02 0-2.33 1.6-2.33 3.2V22h-4.8V8z"/>
+            </svg>
+        </a>
+        </div>
     </aside>
     <!-- RIGHT -->
     <figure class="hero__panel hero__panel--right">
@@ -22,20 +37,6 @@
         <li><a href="{{ '/projects/'   | relative_url }}">Projects</a></li>
         <li><a href="{{ '/blog/'       | relative_url }}">Blog</a></li>
       </ul>
-      <div class="hero__icons">
-        <a href="mailto:{{ site.email }}" aria-label="Email">
-          <!-- email SVG -->
-          <svg width="24" height="24" viewBox="0 0 24 24">…</svg>
-        </a>
-        <a
-          href="{{ site.author.links[1].url }}"
-          aria-label="LinkedIn"
-          target="_blank"
-        >
-          <!-- LinkedIn SVG -->
-          <svg width="24" height="24" viewBox="0 0 24 24">…</svg>
-        </a>
-      </div>
     </nav>
   </div>
 </div>
