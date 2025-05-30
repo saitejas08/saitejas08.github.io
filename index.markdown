@@ -1,6 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+# Hello, I'm Sai Teja 👋
+
+Welcome to my vintage-themed portfolio site.
+
+📝 Built using Jekyll + GitHub Pages  
+🧠 Exploring the world of development  
+📚 More to come soon...
