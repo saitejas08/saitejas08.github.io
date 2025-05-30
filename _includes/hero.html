@@ -1,0 +1,41 @@
+<div class="hero">
+  <div class="hero__overlay"></div>
+  <div class="hero__container">
+    <!-- LEFT -->
+    <aside class="hero__panel hero__panel--left">
+      <h1 class="hero__title">SAI TEJA</h1>
+      <p class="hero__subtitle">Full stack developer</p>
+    </aside>
+    <!-- RIGHT -->
+    <figure class="hero__panel hero__panel--right">
+      <img
+        src="{{ '/assets/images/hero.jpg' | relative_url }}"
+        alt="Portrait of Sai Teja"
+      >
+    </figure>
+
+    <!-- Centered translucent nav -->
+    <nav class="hero__nav">
+      <ul class="hero__menu">
+        <li><a href="{{ '/about/'      | relative_url }}">About Me</a></li>
+        <li><a href="{{ '/experience/' | relative_url }}">Experience</a></li>
+        <li><a href="{{ '/projects/'   | relative_url }}">Projects</a></li>
+        <li><a href="{{ '/blog/'       | relative_url }}">Blog</a></li>
+      </ul>
+      <div class="hero__icons">
+        <a href="mailto:{{ site.email }}" aria-label="Email">
+          <!-- email SVG -->
+          <svg width="24" height="24" viewBox="0 0 24 24">…</svg>
+        </a>
+        <a
+          href="{{ site.author.links[1].url }}"
+          aria-label="LinkedIn"
+          target="_blank"
+        >
+          <!-- LinkedIn SVG -->
+          <svg width="24" height="24" viewBox="0 0 24 24">…</svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>

@@ -1,37 +1,27 @@
-# Site settings
-title: portfolio
+# _config.yml
+title: "Sai Teja Portfolio"
 email: saitejaalanthrawar@gmail.com
-description: >-
-  Personal portfolio website showcasing my work and experience.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://saitejas08.github.io" # the base hostname & protocol for your site
+description: "Full stack developer portfolio & blog"
+baseurl: "" # no subpath
+url: "https://saitejas08.github.io"
 
-# Author settings
-author:
-  name: "Sai Teja"
-  tagline: "Software Developer & Tech Enthusiast"
-  languages: "English | Telugu | Hindi"
-  email: "saitejaalanthrawar@gmail.com"
-  links:
-    - name: "GitHub"
-      url: "https://github.com/saitejas08"
-    - name: "LinkedIn"
-      url: "https://linkedin.com/in/your-profile"
-    - name: "LeetCode"
-      url: "https://leetcode.com/your-profile"
-
-# Build settings
-markdown: kramdown
-theme: minima
+theme: minima # you can keep minima or swap out
 plugins:
   - jekyll-feed
 
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+# Collections aren’t needed—Jekyll treats `about.md`, etc. as pages automatically.
+
+# Pretty URLs
+permalink: pretty
+
+# Ensure assets are copied
+include:
+  - assets
+
+# Defaults: pages use default layout
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
